@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Slendr" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Slendr</title>
+    <link rel="icon" type="image/png" href="images/svg/fav.png">
+</head>
+
+<body id="main" class="bg-[#F0EEEA] transition-[margin-right] duration-500">
+    <!-- TOGGLE SECTION START -->
+    <button type="button"
+        class="toggle-btn w-[40px] md:w-[50px] flex flex-col gap-1 md:gap-[6px] fixed top-5 md:top-[58px] z-10 right-5 transition-all duration-500">
+        <span class="bg-black h-[5px] md:h-[6px] w-full transition-all rounded-sm"></span>
+        <span class="bg-black h-[5px] md:h-[6px] w-full transition-all rounded-sm"></span>
+        <span class="bg-black h-[5px] md:h-[6px] w-full transition-all rounded-sm"></span>
+    </button>
+    <div id="mySidenav"
+        class="sidenav h-full fixed z-[1] w-[250px] top-0 right-[-250px] bg-[#111] overflow-x-hidden transition-all duration-500 sm:pt-[60px] flex flex-col justify-between py-5">
+        <div>
+            <a class="p-[8px_8px_8px_32px] no-underline text-lg sm:text-[25px] text-[#818181] block transition duration-300 hover:text-[#f1f1f1]"
+                href="#">SHOP THE KIT</a>
+            <a class="p-[8px_8px_8px_32px] no-underline text-lg sm:text-[25px] text-[#818181] block transition duration-300 hover:text-[#f1f1f1]"
+                href="#">HOW It WORKS</a>
+            <a class="p-[8px_8px_8px_32px] no-underline text-lg sm:text-[25px] text-[#818181] block transition duration-300 hover:text-[#f1f1f1]"
+                href="#">IS It FOR ME?</a>
+            <a class="p-[8px_8px_8px_32px] no-underline text-lg sm:text-[25px] text-[#818181] block transition duration-300 hover:text-[#f1f1f1]"
+                href="#">REAL RESULTS</a>
+            <a class="p-[8px_8px_8px_32px] no-underline text-lg sm:text-[25px] text-[#818181] block transition duration-300 hover:text-[#f1f1f1]"
+                href="#">Helpful Q&A</a>
+        </div>
+        <div class="px-8 flex flex-col gap-4">
+            <a href="#"
+                class="hover:bg-[#C19BF0] bg-black text-[#F0EEEA] hover:text-white transition-all text-nowrap flex justify-center items-center rounded-full px-7 text-xl xl:text-[26px] min-h-[49px] font-semibold">Shop
+                Now</a>
+            <a href="#"
+                class="hover:bg-[#C19BF0] bg-black text-[#F0EEEA] hover:text-white transition-all text-nowrap flex justify-center gap-3 items-center rounded-full px-7 text-xl xl:text-[26px] min-h-[49px] font-semibold">Shop
+                <img src="images/svg/arrow.svg" alt="arrow-img"></a>
+        </div>
+    </div>
+    <!-- TOGGLE SECTION FINISHED -->
+    <!-- BANNER SECTION START -->
+    <section class="banner-section relative pt-[73px]">
+        <div class="banner-layer absolute w-full z-[-1] md:bottom-[-140px] lg:bottom-[-85px]">
+            <img src="images/svg/banner-layer.svg" alt="banner-img" class="w-full">
+        </div>
+        <div class="banner-inner flex flex-col md:flex-row px-5 md:px-[60px] gap-5 md:gap-10 max-w-[1920px] mx-auto ">
+            <div class="banner-left md:w-1/2">
+                <div class="logo-box wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="index.html"
+                        class="text-black w-full max-w-[200px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[450px] xl:max-w-[698px]"><img
+                            src="images/svg/logo.svg" alt="logo"></a>
+                </div>
+                <div class="banner-img-left rounded-2xl overflow-hidden relative w-full max-w-[458px] md:mb-[48px] my-8 md:mt-[88px] wow fadeInUp"
+                    data-wow-delay="0.4s">
+                    <img class="w-full" src="images/banner-img.png" alt="banner-img">
+                    <div
+                        class="stock-div inline-flex items-center gap-3 bg-[#FCC695] p-1 rounded-full absolute top-5 left-5 min-h-[51px] px-4">
+                        <div class="bg-[#C15C01] w-[23px] h-[23px] rounded-full"></div>
+                        <span class="text-[#C15C01] text-[27px] font-semibold">In Stock</span>
+                    </div>
+                </div>
+                <p class="text-base font-medium line-clamp-3 wow fadeInUp" data-wow-delay="0.5s">See results without
+                    taking a
+                    shot.<br>
+                    Using a uniquely formulated blend of probiotics and plant<br> extracts, Slendr™ harnesses your
+                    body’s natural metabolic
+                    power<br> to create effective, lasting weight management.</p>
+            </div>
+            <div class="banner-right md:w-1/2">
+                <h1 class="text-3xl lg:text-5xl 2xl:text-[68px] font-medium 2xl:leading-[77px] wow fadeInUp"
+                    data-wow-delay="0.3s">Weight Loss
+                    Results<br><span class="text-[#C19BF0]">The Natural Way.</span></h1>
+                <div class="banner-btn flex pt-5 md:pt-[48px] pb-8 md:pb-[77px] wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="#"
+                        class="hover:bg-[#C19BF0] bg-black text-[#F0EEEA] hover:text-white transition-all text-nowrap flex justify-center items-center rounded-full px-7 text-xl xl:text-[26px] min-h-[49px] font-semibold">Shop
+                        Now</a>
+                </div>
+                <div class="banner-right-img rounded-2xl overflow-hidden w-full max-w-[861px] wow fadeInUp"
+                    data-wow-delay="0.4s">
+                    <img src="images/banner-img2.jpg" alt="banner-img" class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER SECTION FINISHED -->
+    <!-- ICON SECTION START -->
+    <section class="pt-14 2xl:pt-0">
+        <div class="container">
+            <div class="banner-left-icon-box flex gap-10 flex-wrap justify-center md:justify-normal wow fadeInUp"
+                data-wow-delay="0.3s">
+                <div class="banner-left-icon-item flex flex-col gap-3 items-center">
+                    <img class="h-[35px] md:h-[58px] w-full" src="images/svg/icon1.svg" alt="icon-img">
+                    <p class="text-base leading-5 md:text-xl font-medium text-center">100%<br> Natural</p>
+                </div>
+                <div class="banner-left-icon-item flex flex-col gap-3 items-center">
+                    <img class="h-[35px] md:h-[58px] w-full" src="images/svg/icon2.svg" alt="icon-img">
+                    <p class="text-base leading-5 md:text-xl font-medium text-center">Safe with<br> Most<br> Medications
+                    </p>
+                </div>
+                <div class="banner-left-icon-item flex flex-col gap-3 items-center">
+                    <img class="h-[35px] md:h-[58px] w-full" src="images/svg/icon3.svg" alt="icon-img">
+                    <p class="text-base leading-5 md:text-xl font-medium text-center">Long<br> Lasting<br> Results</p>
+                </div>
+                <div class="banner-left-icon-item flex flex-col gap-3 items-center">
+                    <img class="h-[35px] md:h-[58px] w-full" src="images/svg/icon4.svg" alt="icon-img">
+                    <p class="text-base leading-5 md:text-xl font-medium text-center">Just 2<br> Doses<br> Daily</p>
+                </div>
+                <div class="banner-left-icon-item flex flex-col gap-3 items-center">
+                    <img class="h-[35px] md:h-[58px] w-full" src="images/svg/icon5.svg" alt="icon-img">
+                    <p class="text-base leading-5 md:text-xl font-medium text-center">Healthy<br> Eating Aid</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ICON SECTION FINISHED -->
+    <!-- MAGIC SECTION START -->
+    <section class="magic-section py-14 md:py-20 lg:py-[120px]">
+        <div class="container">
+            <div class="magic-inner wow fadeInUp" data-wow-delay="0.4s">
+                <h2 class="text-4xl md:text-6xl lg:text-[100px]">Slendr™ Isn’t <span
+                        class="text-[#C19BF0]">Magic.</span></h2>
+                <div class="magic-para flex flex-col lg:flex-row gap-8 md:gap-12 xl:gap-[63px] pt-[15px] md:pt-[50px]">
+                    <p class="lg:max-w-[581px] w-full text-base md:text-xl font-medium">There are plenty of diet pills
+                        and weight loss
+                        supplement routines that promise quick and easy fat-burning results. But
+                        Slendr™ isn’t one of them. Instead, it offers a natural solution that works with your body to
+                        deliver the change you
+                        desire, setting weight loss in motion and helping you make lifestyle changes to boost the steps
+                        toward a slimmer,
+                        healthier reality.</p>
+                    <p class="lg:max-w-[581px] w-full text-base md:text-xl font-medium">For lasting and real results,
+                        Slendr™ should be
+                        paired with regular hydration, healthy eating, and consistent exercise.
+                        Its unique benefits, like curbed cravings and more effective workouts, make establishing a
+                        healthy routine easier, until
+                        a cycle of positive habits and a slimmer self reflect both in the mirror and your reality.</p>
+                    <div class="shop-btn self-start lg:self-center lg:ml-auto">
+                        <a href="#"
+                            class="hover:bg-[#C19BF0] bg-black text-[#F0EEEA] hover:text-white transition-all text-nowrap flex justify-center items-center rounded-full px-7 text-xl xl:text-[30px] min-h-[45px] lg:min-h-[55px] xl:min-h-[66px] font-medium">Shop
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MAGIC SECTION FINISHED -->
+    <!-- SHOP SECTION START -->
+    <section class="shop-section bg-[#DDD8D0] py-14 lg:py-20 xl:py-[120px]">
+        <div class="container">
+            <div class="shop-inner flex flex-col lg:flex-row lg:items-center gap-5 md:gap-10 justify-between relative">
+                <div class="layer-div hidden absolute w-full 2xl:flex justify-center">
+                    <img src="images/svg/shop-layer1.svg" alt="shop-layer">
+                </div>
+                <div class="layer-div hidden absolute z-[1] w-full 2xl:flex justify-center">
+                    <img src="images/svg/shop-layer2.svg" alt="shop-layer">
+                </div>
+                <div class="immunity-div flex flex-col gap-6 xl:gap-10 relative wow fadeInUp" data-wow-delay="0.3s">
+                    <img src="images/shop-img1.jpg" alt="shop-img"
+                        class="rounded-xl max-w-[400px] xl:max-w-[560px] w-full">
+                    <p class="md:text-lg 2xl:text-xl md:font-medium">Strengthen Immunity<br> Suppress Cravings<br>
+                        Enhance
+                        Natural
+                        Metabolism<br> Maximize Your Nutrient Intake</p>
+                    <h4 class="text-2xl xl:text-4xl 2xl:text-[37px] 2xl:leading-[37px] font-semibold">See The Slendr™<br
+                            class="hidden lg:block">
+                        Difference In Just<br class="hidden lg:block">
+                        2 Weeks!*</h4>
+                    <p class="md:text-lg 2xl:text-xl md:font-medium">*Results may vary based on user.</p>
+                </div>
+                <div class="workout-div flex flex-col gap-3 md:gap-5 order-1 lg:order-[unset] relative z-[1] wow fadeInUp"
+                    data-wow-delay="0.3s">
+                    <h4 class="text-2xl xl:text-4xl 2xl:text-[52px] font-semibold 2xl:leading-[50px] lg:text-center">GET
+                        MORE FROM<br class="hidden md:block">
+                        YOUR WORKOUT</h4>
+                    <p class="md:text-lg 2xl:text-xl md:font-medium text-start lg:text-center 2xl:text-start">Taking
+                        Slendr™
+                        before exercise can<br class="hidden 2xl:block"> boost your workout
+                        benefits by
+                        20%.</p>
+                    <div class="shop-btn flex lg:justify-center 2xl:pt-[163px]">
+                        <a href="#"
+                            class="hover:bg-[#C19BF0] bg-black text-[#F0EEEA] hover:text-white transition-all text-nowrap flex justify-center items-center rounded-full px-7 text-xl 2xl:text-[30px] min-h-[45px] xl:min-h-[55px] 2xl:min-h-[66px] font-medium">Shop
+                            Now</a>
+                    </div>
+                </div>
+                <div class="loss-div flex flex-col xl:items-end gap-6 2xl:-translate-x-20 wow fadeInUp"
+                    data-wow-delay="0.3s">
+                    <h4
+                        class="text-2xl xl:text-5xl 2xl:text-[52px] font-semibold order-1 lg:order-[unset] xl:leading-[52px] xl:text-end">
+                        BEYOND WEIGHT LOSS</h4>
+                    <p class="lg:text-lg xl:text-sm 2xl:text-xl lg:font-medium order-1 lg:order-[unset]">Slendr™ users
+                        experience lasting
+                        lifestyle changes,<br class="hidden lg:block">
+                        with reduced cravings and improved metabolism<br class="hidden lg:block"> leading to healthier
+                        eating habits and better
+                        sleep.</p>
+                    <img src="images/shop-img2.jpg" alt="shop-img"
+                        class="rounded-xl max-w-[405px] 2xl:max-w-[470px] w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SHOP SECTION FINISHED -->
+    <!-- KIT SECTION START -->
+    <section class="kit-section py-14 md:py-20 lg:py-[120px]">
+        <div class="container">
+            <div class="kit-inner flex flex-col md:flex-row gap-10 md:gap-16 lg:gap-[100px] items-start">
+                <div class="kit-img-box md:w-1/2 wow fadeInUp" data-wow-delay="0.3s">
+                    <div
+                        class="kit-img-inner relative max-[200px] md:max-w-[800px] max-h-[400px] rounded-xl overflow-hidden md:max-h-[800px] h-full w-full">
+                        <img class="big-img w-full object-cover h-full" src="images/kit-img.jpg" alt="kit-img">
+                        <div class="kit-img-btn-box absolute bottom-5 left-5 flex gap-4">
+                            <button class="max-w-[60px] md:max-w-[71px] w-full max-h-[60px] md:max-h-[71px] h-full"
+                                type="button"><img src="images/kit-img2.jpg" alt="kit-img"
+                                    class="rounded-full w-20"></button>
+                            <button class="max-w-[60px] md:max-w-[71px] w-full max-h-[60px] md:max-h-[71px] h-full"
+                                type="button"><img src="images/kit-img3.jpg" alt="kit-img"
+                                    class="rounded-full w-20"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="kit-info-box flex flex-col justify-between gap-10 md:w-1/2">
+                    <div class="kit-info-heading wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="kit-name text-2xl lg:text-4xl 2xl:text-[52px] font-semibold ">
+                            Slendr™ Kit
+                        </div>
+                        <div class="kit-price pt-2 lg:pt-[26px] text-5xl 2xl:text-[57px] font-semibold">
+                            $79.99 <span class="text-[32px] font-semibold text-[#A7A7A7]">$100.00</span>
+                        </div>
+                        <div class="kit-btn flex pt-5 lg:pt-8">
+                            <a href="#"
+                                class="hover:bg-[#C19BF0] bg-black text-[#F0EEEA] hover:text-white transition-all flex justify-center items-center rounded-full px-7 text-xl xl:text-[34px] min-h-[45px] lg:min-h-[55px] xl:min-h-[66px] font-medium">Add
+                                To Cart</a>
+                        </div>
+                    </div>
+                    <div class="kit-details-box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="kit-details-items border-b border-[#707070] flex justify-between pb-2 lg:pb-[22px]">
+                            <p class="text-sm lg:text-lg xl:text-[22px] font-medium">GMO-FREE</p>
+                            <p class="text-sm lg:text-lg xl:text-[22px] font-medium">GLUTEN-FREE</p>
+                            <p class="text-sm lg:text-lg xl:text-[22px] font-medium">NO ADDITIVES</p>
+                        </div>
+                        <div class="kit-serving-box flex gap-16 md:gap-12 xl:gap-20 pt-3 lg:pt-[32px]">
+                            <div class="kit-serving flex text-4xl xl:text-[57px] font-semibold items-center gap-5">
+                                60 <span class="text-base xl:text-[22px] font-medium">Servings Per <br> Container</span>
+                            </div>
+                            <div class="kit-capsules flex flex-col text-xl xl:text-[35px] font-semibold">
+                                4 Capsules <span class="text-base xl:text-[22px] font-medium">Daily Dosage</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acoddian-box wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="acoddian-item-box border-b border-[#707070]">
+                            <button
+                                class="w-full flex justify-between items-center text-lg lg:text-[22px] text-start pb-1">Recommended
+                                Dosage & Directions
+                                <span>+</span></button>
+                            <div class="acoddian-para-box pb-3 pt-2 hidden pr-3">
+                                <p class="text-sm lg:text-[15px] text-[#2D2D2D]">Take 2 capsules of both Trimbiotic™ and
+                                    Trimaid™
+                                    daily. Take one
+                                    dose 15 minutes before breakfast and one dose 15
+                                    minutes before dinner. For increased effectiveness, take all 4 capsules 15 minutes
+                                    before exercising. <br><br>
+
+                                    Some may experience initial discomfort when consuming Slendr for the first time,
+                                    such as a slight headache, upset
+                                    stomach,<br>
+                                    diarrhea, or lightheadedness. This is a sign that the vitamins are working but may
+                                    be too intense for you. Stop for 3
+                                    days<br>
+                                    and then resume; your body will then be acclimated to achieve the full potential of
+                                    Slendr™.</p>
+                            </div>
+                        </div>
+                        <div class="acoddian-item-box border-b border-[#707070]">
+                            <button
+                                class="w-full flex justify-between items-center text-lg lg:text-[22px] text-start pb-1 pt-4 lg:pt-8">Usage
+                                Guidelines
+                                <span>+</span></button>
+                            <div class="acoddian-para-box pb-3 pt-2 hidden pr-3">
+                                <p class="text-[15px] text-[#2D2D2D]">Slendr™ has been proven safe alongside most common
+                                    medications
+                                    and injections.<br>
+                                    Do not take while undergoing radiation treatment.<br>
+                                    Always check with your doctor before beginning any supplement regimen.</p>
+                            </div>
+                        </div>
+                        <div class="acoddian-item-box border-b border-[#707070]">
+                            <button
+                                class="w-full flex justify-between items-center text-lg lg:text-[22px] text-start pb-1 pt-4 lg:pt-8">Ingredients
+                                <span>+</span></button>
+                            <div class="acoddian-para-box pb-3 pt-2 hidden pr-3">
+                                <p class="text-[15px] text-[#2D2D2D]">Trimaid: Green Coffee Bean Extract (Coffea
+                                    robusta)(50% Chlorogenic Acid), Green Tea Leaf Extract (98% Polyphenols) (80%
+                                    Catechins)(50% Epigallocatechin Gallate(EGCG)), Capsimax Cayenne Pepper Fruit
+                                    Extract (4% Casaicinoids)<br>
+                                    Other Ingredients: Hypromellose (Capsule), Rice Flour<br>
+                                    Food Sensitivities: Free of milk/casein, eggs, fish, shellfish, tree nuts, peanuts,
+                                    wheat/gluten, soybeans, artificial
+                                    colors, flavors or preservatives.<br><br>
+
+                                    Trimbiotic: Probiotic Blend, Lactobacillus acidophilus, Lactobacillus plantarum,
+                                    Lactobacillus rhamnosus,
+                                    Bifidobacterium lactis, Lactobacillus gasseri, Bifidobacterium breve,
+                                    Bifidobacterium longum
+                                    Other Ingredients: Microcrystalline cellulose and vegetarian capsule (hydroxypropyl
+                                    methylcellulose, water).
+                                    Food Sensitivities: Free of milk/casein, eggs, fish, shellfish, tree nuts, peanuts,
+                                    wheat/gluten, soybeans, artificial
+                                    colors, flavors or preservatives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- KIT SECTION FINISHED -->
+    <!-- SLIDER SECTION START -->
+    <section class="slider-section bg-[#DDD8D0] md:rounded-b-3xl py-14 md:py-20 lg:py-[100px]">
+        <div class="swiper mySwiper wow fadeInUp" data-wow-delay="0.3s">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider-box text-center px-5">
+                        <div class="rating-box flex justify-center gap-[10px]">
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                        </div>
+                        <p class="text-center text-base md:text-xl font-medium py-7">I used to struggle with bloating
+                            and low energy, but Slendr™ changed everything. It’s become a crucial part of my daily
+                            routine.</p>
+                        <div class="text-xl md:text-4xl font-semibold">- Michael T.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-box text-center px-5">
+                        <div class="rating-box flex justify-center gap-[10px]">
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                        </div>
+                        <p class="text-center text-base md:text-xl font-medium py-7">As soon as I began using Slendr™, I
+                            saw significant improvement
+                            with my digestion. I’m impressed with the incredible
+                            difference it’s made in my weight loss journey.</p>
+                        <div class="text-xl md:text-4xl font-semibold">-Susan K.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-box text-center px-5">
+                        <div class="rating-box flex justify-center gap-[10px]">
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                        </div>
+                        <p class="text-center text-base md:text-xl font-medium py-7">Dieting never worked for me. I
+                            thought I was stuck. Since I
+                            incorporated the Slendr™ kit into my diet, I’ve finally
+                            started to see positive changes; it seems to have really boosted my metabolism.</p>
+                        <div class="text-xl md:text-4xl font-semibold">-David L.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-box text-center px-5">
+                        <div class="rating-box flex justify-center gap-[10px]">
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                        </div>
+                        <p class="text-center text-base md:text-xl font-medium py-7">After trying countless products,
+                            Slendr™ was the only one that
+                            actually worked. I feel lighter, healthier, and more
+                            energized every day!</p>
+                        <div class="text-xl md:text-4xl font-semibold">- Rachel M.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-box text-center px-5">
+                        <div class="rating-box flex justify-center gap-[10px]">
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                        </div>
+                        <p class="text-center text-base md:text-xl font-medium py-7">Slendr™ has been a game-changer! My
+                            cravings are finally under
+                            control, and I feel so much more balanced.</p>
+                        <div class="text-xl md:text-4xl font-semibold">- Emily R.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-box text-center px-5">
+                        <div class="rating-box flex justify-center gap-[10px]">
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                        </div>
+                        <p class="text-center text-base md:text-xl font-medium py-7">I used to struggle with bloating
+                            and low energy, but Slendr™
+                            changed everything. It’s become a crucial part of my daily
+                            routine.</p>
+                        <div class="text-xl md:text-4xl font-semibold">- Michael T.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-box text-center px-5">
+                        <div class="rating-box flex justify-center gap-[10px]">
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                        </div>
+                        <p class="text-center text-base md:text-xl font-medium py-7">As soon as I began using Slendr™, I
+                            saw significant improvement
+                            with my digestion. I’m impressed with the incredible
+                            difference it’s made in my weight loss journey.</p>
+                        <div class="text-xl md:text-4xl font-semibold">-Susan K.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-box text-center px-5">
+                        <div class="rating-box flex justify-center gap-[10px]">
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                        </div>
+                        <p class="text-center text-base md:text-xl font-medium py-7">Dieting never worked for me. I
+                            thought I was stuck. Since I
+                            incorporated the Slendr™ kit into my diet, I’ve finally
+                            started to see positive changes; it seems to have really boosted my metabolism.</p>
+                        <div class="text-xl md:text-4xl font-semibold">-David L.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-box text-center px-5">
+                        <div class="rating-box flex justify-center gap-[10px]">
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                        </div>
+                        <p class="text-center text-base md:text-xl font-medium py-7">After trying countless products,
+                            Slendr™ was the only one that
+                            actually worked. I feel lighter, healthier, and more
+                            energized every day!</p>
+                        <div class="text-xl md:text-4xl font-semibold">- Rachel M.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-box text-center px-5">
+                        <div class="rating-box flex justify-center gap-[10px]">
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                            <div class="rating-img max-w-[20px] md:max-w-[28px] lg:max-w-[34px] w-full">
+                                <img src="images/svg/rating-slider.svg" alt="rating-slider">
+                            </div>
+                        </div>
+                        <p class="text-center text-base md:text-xl font-medium py-7">Slendr™ has been a game-changer! My
+                            cravings are finally under
+                            control, and I feel so much more balanced.</p>
+                        <div class="text-xl md:text-4xl font-semibold">- Emily R.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-btn text-center flex justify-center pt-8 md:pt-12 lg:pt-16 xl:pt-[113px] wow fadeInUp"
+            data-wow-delay="0.4s">
+            <a href="#"
+                class="hover:bg-[#C19BF0] bg-black text-[#F0EEEA] hover:text-white transition-all flex justify-center items-center rounded-full px-7 text-xl lg:text-[30px] min-h-[45px] lg:min-h-[66px] font-medium">Try
+                It Now</a>
+        </div>
+    </section>
+    <!-- SLIDER SECTION FINISHED -->
+    <!-- WORK SECTION START -->
+    <section class="work-section py-14 md:py-20 lg:py-[120px]">
+        <div class="container">
+            <div class="work-inner flex flex-col md:flex-row gap-11">
+                <div class="work-info md:w-1/2 wow fadeInUp" data-wow-delay="0.3s">
+                    <div
+                        class="work-info-inner md:sticky top-8 max-w-[737px] w-full md:min-h-[778px] flex flex-col justify-center bg-[#DDD8D0] rounded-3xl px-5 py-10 md:py-14 xl:px-[127px]">
+                        <h4 class="text-4xl lg:text-[52px] font-bold text-center">How It Works</h4>
+                        <p class="text-lg lg:text-xl py-5 md:py-[40px] text-center">Your overall health relies on
+                            a robust
+                            immune system and a well-functioning digestive tract. A healthy microbiome
+                            creates an optimal environment for absorbing vitamins and minerals, allowing them to reach
+                            vital organs. The metabolic
+                            process of nutrient absorption also aids in detoxifying your organs. Effective weight
+                            management, combined with a
+                            balanced diet, is essential for providing your body with the energy and stamina needed for a
+                            vibrant, healthy lifestyle.</p>
+                        <div class="text-lg lg:text-[23px] lg:leading-[24px] font-medium text-center">Slendr™
+                            supports these
+                            processes with the combined power of two potent formulas:</div>
+                    </div>
+                </div>
+                <div class="work-img-box md:w-1/2 flex flex-col gap-11">
+                    <div class="work-img-item relative rounded-full overflow-hidden w-full max-w-[706px] min-h-[500px] lg:min-h-[706px] bg-[url('images/work-img1.png')] bg-cover bg-center flex items-center wow fadeInUp"
+                        data-wow-delay="0.3s">
+                        <div
+                            class="work-img-info w-full h-full flex flex-col justify-center items-center gap-5 md:gap-8 lg:gap-[80px] px-8 xl:px-20 2xl:translate-y-[100px]">
+
+                            <h5 class="text-5xl lg:text-6xl xl:text-[103px] font-bold text-[#F0EEEA]">Trimbiotic™</h5>
+                            <div>
+                                <p
+                                    class="text-center text-base md:text-lg lg:text-xl pb-2 text-white lg:text-black uppercase">
+                                    Stimulates Metabolism | Boosts
+                                    Immunity</p>
+                                <p class="text-center text-base lg:text-xl text-white lg:text-black">
+                                    Trimbiotic contains 7 potent probiotic
+                                    strains,
+                                    delivering<br class="hidden 2xl:block">
+                                    50 billion CFUs (colony forming units) to support weight<br
+                                        class="hidden 2xl:block">
+                                    management for a
+                                    slimmer, more
+                                    energetic you.<br class="hidden 2xl:block">
+                                    It also acts as a natural body cleanser<br class="hidden 2xl:block">
+                                    and detoxifier.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-img-item relative rounded-full overflow-hidden w-full max-w-[706px] min-h-[500px] lg:min-h-[706px] bg-[#C15C00] flex items-center wow fadeInUp"
+                        data-wow-delay="0.4s">
+                        <div
+                            class="work-img-info w-full h-full flex flex-col justify-center items-center gap-5 md:gap-8 lg:gap-[27px] px-8 lg:px-20">
+
+                            <h5
+                                class="text-3xl lg:text-6xl xl:text-[103px] font-bold text-[#2F1701] text-center xl:leading-[84px]">
+                                Meet<br>
+                                Trimaid™</h5>
+                            <div>
+                                <p
+                                    class="text-center text-lg lg:text-[23px] md:leading-[31px] text-[#2F1701] uppercase pb-[12px]">
+                                    Promotes Digestion | Helps Break Down Fats</p>
+                                <p class="text-center text-base lg:text-[23px] lg:leading-[31px] text-[#2F1701]">
+                                    This unique
+                                    formula
+                                    harnesses Capsimax, a<br class="hidden 2xl:block"> clinically researched metabolic
+                                    stimulant and<br class="hidden 2xl:block"> natural
+                                    appetite
+                                    suppressant,
+                                    along with green tea<br class="hidden 2xl:block"> leaf extract and other natural
+                                    plant ingredients,<br class="hidden 2xl:block">
+                                    promoting
+                                    balanced weight management.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-img-item relative rounded-2xl overflow-hidden w-full max-w-[706px] lg:min-h-[706px] bg-[#FCC695] flex items-center wow fadeInUp"
+                        data-wow-delay="0.3s">
+                        <div
+                            class="work-img-info w-full h-full flex flex-col justify-center gap-5 md:gap-8 lg:gap-[36px] px-8 lg:px-16 py-[60px]">
+
+                            <h5 class="text-4xl lg:text-6xl xl:text-[130px] text-[#C15C01] xl:leading-[121px]">
+                                Discover<br>
+                                Slendr™</h5>
+                            <div>
+                                <p class="text-lg lg:text-[23px] font-medium text-[#C15C01] pb-[20px]">
+                                    Experience an effective pathway to lasting, natural weight management - and a
+                                    healthier you.</p>
+                                <p class="text-base lg:text-xl text-[#C15C01]">
+                                    Slendr™’s powerful blend enhances the body’s natural calorie-shedding process, often
+                                    leading to increased sweating
+                                    during workouts as calories burn away. This formula is scientifically proven to
+                                    promote muscle building, helping you
+                                    achieve a leaner physique. By effectively lowering insulin levels and harnessing its
+                                    natural effects, Slendr™
+                                    significantly curbs appetite and reduces cravings, making it easier to stick to your
+                                    weight management goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-img-item relative rounded-full overflow-hidden w-full max-w-[706px] min-h-[500px] lg:min-h-[706px] bg-[#FFFFFF] flex items-center wow fadeInUp"
+                        data-wow-delay="0.4s">
+                        <div
+                            class="work-img-info w-full h-full flex flex-col justify-center items-center gap-5 md:gap-8 px-8 lg:px-16">
+
+                            <h5
+                                class="text-2xl lg:text-4xl xl:text-[52px] font-bold text-[#2F1701] text-center xl:leading-[52px] uppercase">
+                                To Get
+                                the<br>
+                                Most Out of<br>
+                                Slendr™</h5>
+                            <div>
+                                <p class="text-center text-base lg:text-xl text-[#2F1701] line-clamp-4">
+                                    Slendr™ isn’t a weight loss shortcut, but it can help cut down those extra pounds -
+                                    when combined with the right
+                                    efforts. Paired with healthy habits and a balanced diet, Slendr™ supports your
+                                    metabolism on the path to stable, sustainable
+                                    results.</p>
+                                <div class="work-btn flex justify-center pt-5 lg:pt-[48px]">
+                                    <a href="#"
+                                        class="hover:bg-[#C19BF0] bg-black text-[#F0EEEA] hover:text-white transition-all text-nowrap flex justify-center items-center rounded-full px-[30px] text-xl xl:text-[34px] min-h-[66px]">Shop
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WORK SECTION FINISHED -->
+    <!-- USER WHO SECTION START -->
+    <section class="user-who-section bg-[#DDD8D0] py-14 md:py-20 lg:py-[120px]">
+        <div class="container">
+            <div
+                class="user-who-inner flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 md:gap-12 lg:gap-16 xl:gap-[70px]">
+                <div class="user-who-img max-w-[200px] mx-auto md:max-w-[300px] 2xl:max-w-[432px] w-full  rounded-full overflow-hidden relative wow fadeInUp"
+                    data-wow-delay="0.3s">
+                    <img class="blur-[2px] object-cover" src="images/user-img.jpg" alt="user-img">
+                    <h2
+                        class="text-[#F0EEEA] text-center text-3xl md:text-4xl lg:text-5xl xl:text-[60px] lg:leading-[60px] font-semibold absolute top-0 w-full h-full flex justify-center items-center">
+                        Is Slendr™<br>
+                        For Me?</h2>
+                </div>
+                <div class="user-who-info flex flex-col gap-3 md:gap-5 lg:gap-[25px] wow fadeInUp"
+                    data-wow-delay="0.4s">
+                    <h4 class="font-medium text-xl md:text-2xl lg:text-2xl 2xl:text-[28px]">Slendr™ is ideal for users
+                        who:</h4>
+                    <div class="user-who-info-inner flex flex-col gap-2 md:gap-3 2xl:gap-3">
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Prioritize health</p>
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Exercise regularly</p>
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Are looking for natural
+                            weight management solutions</p>
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Value clean, effective
+                            ingredients</p>
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Seek to reduce cravings and
+                            improve metabolism</p>
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Want to enhance their overall
+                            wellness</p>
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Are committed to a balanced
+                            lifestyle</p>
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Aren’t looking for a quick
+                            fix in weight loss pills or diet
+                            supplements</p>
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Men and women alike</p>
+                    </div>
+                </div>
+                <div class="user-who-info flex flex-col gap-3 md:gap-5 lg:gap-[25px] lg:max-w-[300px] xl:max-w-[350px] 2xl:max-w-[580px] w-full self-start wow fadeInUp"
+                    data-wow-delay="0.5s">
+                    <h4 class="font-medium text-xl md:text-2xl lg:text-2xl 2xl:text-[28px]">Recommendations:</h4>
+                    <div class="user-who-info-inner flex flex-col gap-2 md:gap-3 2xl:gap-[30px]">
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Slendr has been proven safe
+                            alongside most common medications and
+                            injections.</p>
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Always check with your doctor
+                            before beginning any supplement
+                            regimen.</p>
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Do not take while undergoing
+                            radiation treatment.</p>
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">If the effects of Slendr are
+                            too intense, dosage may be lowered
+                            to one capsule of each component every day.</p>
+                        <p class="text-sm md:text-base lg:text-sm 2xl:text-xl">Metabolism effects may cause
+                            upset stomach in some users. A
+                            spoonful of Psyllium husk or Flax seed powder may be
+                            helpful.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- USER WHO SECTION FINISHED -->
+    <!-- FAQ SECTION START -->
+    <section class="faq-section py-14 md:py-20 lg:py-[120px]">
+        <div class="container">
+            <div class="faq-inner flex flex-col gap-5 sm:gap-8 xl:gap-[88px]">
+                <div class="faq-heading">
+                    <h2 class="text-center text-black text-4xl md:text-5xl lg:text-[60px] wow fadeInUp"
+                        data-wow-delay="0.3s">Frequently Ask
+                        <span class="text-[#C19BF0]">Questions</span>
+                    </h2>
+                </div>
+                <div class="faq-box max-w-[1426px] mx-auto w-full wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="faq-item-box border-b md:border-b-2 border-black">
+                        <button
+                            class="w-full flex justify-between items-center text-start text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-[41px] pt-4 md:pt-5 lg:pt-10 pb-2 md:pb-3 xl:pb-[18px]">
+                            Do I Need To Use Both Trimaid™ And Trimbiotic™ To Achieve Results?
+                            <span>-</span> </button>
+                        <div class="faq-para-box pr-4 pt-1 lg:pt-1 2xl:pt-[24px] pb-2 md:pb-4 xl:pb-[52px]">
+                            <p class="text-sm md:text-base lg:text-lg 2xl:text-[23px] 2xl:leading-[31px]">Optimal
+                                results are achieved when the two products are
+                                used together, but each one will be effective on its own as well.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item-box border-b md:border-b-2 border-black">
+                        <button
+                            class="w-full flex justify-between items-center text-start text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-[41px] pt-4 md:pt-5 lg:pt-10 pb-2 md:pb-3 xl:pb-[18px]">
+                            Can I Become Addicted To Slendr™?
+                            <span>+</span> </button>
+                        <div class="faq-para-box pr-4 pt-1 lg:pt-1 2xl:pt-[24px] pb-2 md:pb-4 xl:pb-[52px] hidden">
+                            <p class="text-sm md:text-base lg:text-lg 2xl:text-[23px] 2xl:leading-[31px]">No. if you
+                                maintain healthy eating habits and regular
+                                exercise in conjunction with taking Slendr™, your weight can be
+                                kept in check without the need for continuous Slendr™ supplementation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item-box border-b md:border-b-2 border-black">
+                        <button
+                            class="w-full flex justify-between items-center text-start text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-[41px] pt-4 md:pt-5 lg:pt-10 pb-2 md:pb-3 xl:pb-[18px]">
+                            How Long Will It Take To See Results?
+                            <span>+</span> </button>
+                        <div class="faq-para-box pr-4 pt-1 lg:pt-1 2xl:pt-[24px] pb-2 md:pb-4 xl:pb-[52px] hidden">
+                            <p class="text-sm md:text-base lg:text-lg 2xl:text-[23px] 2xl:leading-[31px]">Many customers
+                                have reported seeing changes within 2
+                                weeks, although it may take 4 to 6 weeks to notice results.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item-box border-b md:border-b-2 border-black">
+                        <button
+                            class="w-full flex justify-between items-center text-start text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-[41px] pt-4 md:pt-5 lg:pt-10 pb-2 md:pb-3 xl:pb-[18px]">
+                            Can I Take Slendr™ While Nursing?
+                            <span>+</span> </button>
+                        <div class="faq-para-box pr-4 pt-1 lg:pt-1 2xl:pt-[24px] pb-2 md:pb-4 xl:pb-[52px] hidden">
+                            <p class="text-sm md:text-base lg:text-lg 2xl:text-[23px] 2xl:leading-[31px]">Yes. Slendr™
+                                should not cause any staining issues
+                                while nursing. However, please be aware that Slendr™ contains green
+                                tea, which might reduce your milk supply. It’s recommended to start with a half dose
+                                and, after a week, if you notice no
+                                changes in your milk supply, you can increase the dosage.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item-box border-b md:border-b-2 border-black">
+                        <button
+                            class="w-full flex justify-between items-center text-start text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-[41px] pt-4 md:pt-5 lg:pt-10 pb-2 md:pb-3 xl:pb-[18px]">
+                            Can I Take Slendr™ During Pregnancy?
+                            <span>+</span> </button>
+                        <div class="faq-para-box pr-4 pt-1 lg:pt-1 2xl:pt-[24px] pb-2 md:pb-4 xl:pb-[52px] hidden">
+                            <p class="text-sm md:text-base lg:text-lg 2xl:text-[23px] 2xl:leading-[31px]">If you were
+                                taking Slendr™ before becoming pregnant,
+                                it is generally safe to continue. However, starting Slendr™ while
+                                already pregnant is not recommended, as any significant changes to your body could be
+                                too drastic during this delicate
+                                time. If you still wish to take it, consider starting with a half dose and closely
+                                monitor your body’s response.
+                                Trimbiotic™ alone is safe during pregnancy as it consists solely of a beneficial blend
+                                of probiotics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ SECTION FINISHED -->
+    <!-- FOOTER SECTION START -->
+    <footer class="md:px-5 lg:px-10">
+        <div class="footer-outer bg-black md:rounded-t-3xl py-10 md:py-14 lg:py-[85px]">
+            <div class="container">
+                <div class="footer-inner flex flex-col sm:flex-row justify-between xl:items-center gap-10">
+                    <div class="logo-box wow fadeInUp" data-wow-delay="0.3s">
+                        <a href="index.html"
+                            class="text-[#F0EEEA] max-w-[200px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[450px] xl:max-w-[650px] 2xl:max-w-[840px] w-full flex"><img
+                                src="images/svg/footer-logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="footer-links flex flex-col gap-3 md:gap-5 xl:gap-9 wow fadeInUp" data-wow-delay="0.3s">
+                        <a href="#"
+                            class="text-[#F0EEEA] underline text-sm sm:text-base md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-[30px] hover:scale-105 transition-all">SHOP
+                            THE KIT</a>
+                        <a href="#"
+                            class="text-[#F0EEEA] underline text-sm sm:text-base md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-[30px] hover:scale-105 transition-all">HOW
+                            It WORKS</a>
+                        <a href="#"
+                            class="text-[#F0EEEA] underline text-sm sm:text-base md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-[30px] hover:scale-105 transition-all">IS
+                            It FOR ME?</a>
+                        <a href="#"
+                            class="text-[#F0EEEA] underline text-sm sm:text-base md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-[30px] hover:scale-105 transition-all">REAL
+                            RESULTS</a>
+                        <a href="#"
+                            class="text-[#F0EEEA] underline text-sm sm:text-base md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-[30px] hover:scale-105 transition-all">Helpful
+                            Q&A</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION FINISHED -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+                1500: {
+                    slidesPerView: 4,
+                    spaceBetween: 80,
+                },
+            },
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="script/wow.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/icon_fonts.js"></script>
+</body>
+
+</html>
